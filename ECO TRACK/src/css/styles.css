@@ -305,3 +305,739 @@ ul li a {
     width: 50%;
 }
 }
+
+
+.eco-app-section {
+    background-color: #ffffff;
+    color: #1e293b;
+    padding: 40px 16px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.eco-app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* Textos y Botones (Móvil) */
+.eco-mobile {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.eco-mobile__badge {
+    display: inline-block;
+    background-color: #e6f6ec;
+    color: #38a169;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.eco-mobile__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1e293b;
+    line-height: 1.15;
+    margin: 0 0 16px 0;
+}
+
+.eco-mobile__description {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 0 28px 0;
+}
+
+.eco-mobile__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.eco-btn {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.eco-btn--primary {
+    background-color: #48bb78;
+    color: #ffffff;
+}
+
+.eco-btn--secondary {
+    background-color: #e6f6ec;
+    color: #2f855a;
+}
+
+/* Ilustración (Móvil escalado sin desbordar) */
+.eco-visual {
+    position: relative;
+    width: 480px;
+    min-width: 480px;
+    height: 440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.65);
+    transform-origin: top center;
+    margin-bottom: -140px;
+}
+
+.eco-blob {
+    position: absolute;
+    width: 390px;
+    height: 410px;
+    background-color: #52c47d;
+    border-radius: 220px 170px 240px 150px;
+    right: 20px;
+    z-index: 1;
+}
+
+.eco-badge {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+    width: 95px;
+}
+
+.eco-badge span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1e293b;
+    margin-top: 6px;
+    line-height: 1.2;
+}
+
+.eco-badge__icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.eco-icon--blue { background-color: #4299e1; }
+.eco-icon--orange { background-color: #ed8936; }
+.eco-icon--green { background-color: #48bb78; }
+
+.eco-badge--top { top: 20px; left: 45px; }
+.eco-badge--middle { top: 175px; left: 5px; }
+.eco-badge--bottom { bottom: 20px; left: 75px; }
+
+/* Teléfono Trasero */
+.phone-back {
+    position: absolute;
+    width: 195px;
+    height: 360px;
+    background-color: #1a202c;
+    border-radius: 30px;
+    border: 4px solid #4a5568;
+    transform: rotate(-18deg);
+    right: 195px;
+    top: 65px;
+    z-index: 2;
+    box-shadow: -15px 20px 35px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-camera {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 54px;
+    background-color: #000000;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 0;
+}
+
+.phone-camera span {
+    width: 10px;
+    height: 10px;
+    background-color: #2d3748;
+    border-radius: 50%;
+}
+
+.phone-back__brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dot-green { color: #48bb78; }
+
+/* Teléfono Delantero */
+.phone-front {
+    position: absolute;
+    width: 225px;
+    height: 415px;
+    background-color: #1a202c;
+    border-radius: 34px;
+    padding: 10px;
+    transform: rotate(10deg);
+    right: 35px;
+    top: 25px;
+    z-index: 3;
+    box-shadow: -12px 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.phone-notch {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -47px;
+    width: 95px;
+    height: 16px;
+    background-color: #1a202c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 5;
+}
+
+.phone-screen {
+    background-color: #f8fafc;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 24px 12px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #1e293b;
+}
+
+.live-pill {
+    background-color: #dcfce7;
+    color: #16a34a;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50px;
+}
+
+.app-banner {
+    background-color: #38a169;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 8px 0;
+}
+
+.route-tag {
+    background-color: #2f855a;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.app-stat-main {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.app-stat-sub {
+    font-size: 11px;
+    margin-top: 2px;
+    color: #ffffff;
+}
+
+.app-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.app-card {
+    background-color: #ffffff;
+    padding: 7px 9px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.card-sub {
+    font-size: 10px;
+    color: #64748b;
+}
+
+.txt-red { color: #e53e3e; font-weight: bold; }
+.txt-orange { color: #dd6b20; font-weight: bold; }
+.txt-green { color: #38a169; font-weight: bold; }
+.chevron { color: #94a3b8; font-size: 14px; }
+
+.app-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 12px;
+}
+
+/* =========================================
+   2. DESKTOP (MIN-WIDTH: 960PX)
+   ========================================= */
+@media (min-width: 960px) {
+    .eco-app-section {
+        padding: 64px 32px;
+    }
+
+    .eco-app-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: 48px;
+    }
+
+    .eco-mobile {
+        flex: 1;
+        text-align: left;
+    }
+
+    .eco-mobile__title {
+        font-size: 44px;
+    }
+
+    .eco-mobile__description {
+        font-size: 17px;
+    }
+
+    .eco-mobile__buttons {
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .eco-visual {
+        flex: 1;
+        height: 460px;
+        transform: scale(1);
+        margin-bottom: 0;
+    }
+}
+
+.eco-input,
+.eco-textarea {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #64748b;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.eco-textarea {
+    height: 110px;
+}
+
+.eco-form__btn {
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f172a;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #2563eb, #f97316);
+    margin-top: 6px;
+}
+
+/* =========================================
+   1. ESTILOS BASE: MOBILE FIRST (CELULAR)
+   ========================================= */
+
+/* --- Sección Contacto (Móvil) --- */
+.eco-contact {
+    background-color: #e2e8f0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.eco-contact__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.eco-contact__form-box {
+    padding: 32px 20px;
+    flex: 2;
+}
+
+.eco-contact__title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f172a;
+    margin: 0 0 24px 0;
+}
+
+.eco-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.eco-form__row {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.eco-input {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #1e293b;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.eco-input--mensaje {
+    height: 110px;
+    padding-bottom: 70px;
+}
+
+.eco-form__btn {
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f172a;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #2563eb, #f97316);
+    margin-top: 6px;
+}
+
+.eco-contact__image {
+    flex: 1;
+    display: flex;
+}
+
+.eco-contact__image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================
+   1. ESTILOS BASE: MOBILE FIRST (CELULAR)
+   ========================================= */
+
+/* --- Sección Contacto --- */
+.eco-contact {
+    background-color: #e2e8f0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.eco-contact__container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.eco-contact__form-box {
+    flex: 2.2;
+    padding: 16px 12px;
+    box-sizing: border-box;
+}
+
+.eco-contact__title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f172a;
+    margin: 0 0 12px 0;
+}
+
+.eco-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.eco-form__row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.eco-input {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 10px;
+    font-size: 10px;
+    color: #1e293b;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.eco-input--mensaje {
+    height: 65px;
+    padding-bottom: 40px;
+}
+
+.eco-form__btn {
+    width: 100%;
+    border-radius: 50px;
+    padding: 9px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #0f172a;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #2563eb, #f97316);
+    margin-top: 2px;
+}
+
+.eco-contact__image {
+    flex: 1;
+    display: flex;
+}
+
+.eco-contact__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Footer --- */
+.eco-footer {
+    background-color: #f1f5f9;
+    padding: 14px 12px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0f172a;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.eco-footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.eco-footer__logo img {
+    width: 55px;
+    height: auto;
+    display: block;
+}
+
+.eco-footer__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.eco-footer__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.eco-footer__links {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    text-align: left;
+}
+
+.eco-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.eco-footer__col a {
+    text-decoration: none;
+    color: #0f172a;
+    font-size: 9px;
+    line-height: 1.2;
+}
+
+.eco-footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.eco-footer__socials img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.eco-footer__bottom {
+    border-top: 1px solid #334155;
+    padding-top: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+.eco-footer__bottom p {
+    margin: 0;
+    font-size: 9px;
+    color: #0f172a;
+}
+
+/* =========================================
+   2. DESKTOP: MIN-WIDTH 960PX (ESCRITORIO)
+   ========================================= */
+@media (min-width: 960px) {
+    .eco-contact__form-box {
+        padding: 40px 48px;
+    }
+
+    .eco-contact__title {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .eco-form {
+        gap: 14px;
+    }
+
+    .eco-form__row {
+        gap: 14px;
+    }
+
+    .eco-input {
+        border-radius: 16px;
+        padding: 14px 18px;
+        font-size: 14px;
+    }
+
+    .eco-input--mensaje {
+        height: 115px;
+        padding-bottom: 75px;
+    }
+
+    .eco-form__btn {
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    .eco-footer {
+        padding: 24px 40px 18px;
+    }
+
+    .eco-footer__container {
+        gap: 36px;
+    }
+
+    .eco-footer__logo img {
+        width: 115px;
+    }
+
+    .eco-footer__right {
+        gap: 16px;
+    }
+
+    .eco-footer__links {
+        gap: 80px;
+    }
+
+    .eco-footer__col {
+        gap: 14px;
+    }
+
+    .eco-footer__col a {
+        font-size: 14px;
+    }
+
+    .eco-footer__socials {
+        gap: 20px;
+    }
+
+    .eco-footer__socials img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .eco-footer__bottom {
+        padding-top: 12px;
+    }
+
+    .eco-footer__bottom p {
+        font-size: 13px;
+    }
+}
